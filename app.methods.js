@@ -34,7 +34,7 @@ const Port=process.env.port;
 
 
 app.get("/generate-qr", async (req, res) => {
-  const url = "https://sportify-kids.vercel.app/HomePage"; // الرابط الذي سيتضمنه QR Code
+  const url = "https://sportify-kids.web.app//HomePage"; // الرابط الذي سيتضمنه QR Code
   try {
     const qrCodeDataURL = await QRCode.toDataURL(url);
     res.json({ qrCode: qrCodeDataURL });
